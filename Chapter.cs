@@ -1,3 +1,7 @@
+using System;
+using System.Collections.Generic;
+
+namespace System{
 public class Chapter
 {
     public string Title;
@@ -29,4 +33,5 @@ public class Chapter
         }
         Console.Clear();
     }
+}
 }

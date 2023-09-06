@@ -1,3 +1,4 @@
+namespace System{
 public class Page
 {
     public string Content;
@@ -14,4 +15,4 @@ public class Page
         Book.WriteLine(Content);
         Console.ResetColor();
     }
-}
+}}

@@ -1,3 +1,4 @@
+namespace System{
 public static class MyNotes
 {
     public static string VariablesPageOne = @"...
@@ -42,4 +43,4 @@ if you're building a game, you could have a 'Player' class with fields like 'hea
  ";
 
 
-}
+}}
