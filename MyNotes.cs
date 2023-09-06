@@ -26,4 +26,20 @@ A 'string' is a sequence of characters, like ""Hello World"", ""I am a string"",
 A 'float' is a decimal number, like 1.234, 5.678, and 9.101112. 
 A 'bool' is a true or false value, like true and false. ";
 
+public static string ClassPageOne =
+@"...
+n C#, classes are fundamental building blocks of object-oriented programming (OOP) and play a crucial role in organizing and structuring code. 
+Think of a class as a blueprint or template for creating objects, which are instances of that class. 
+If variables are like containers that hold data, classes are like the blueprints that define what those containers should look like and what they can do. ";
+
+public static string ClassPageTwo =
+@"...
+A class encapsulates both data (in the form of variables, also known as fields) and behavior (in the form of methods). 
+Variables inside a class are called fields, and they define the characteristics or attributes of an object. 
+Methods, on the other hand, represent the actions or operations that can be performed on the object. 
+By defining classes, you can create reusable and organized code. For instance, 
+if you're building a game, you could have a 'Player' class with fields like 'health' and 'score' and methods like 'attack' and 'move.' This helps maintain code clarity, reusability, and modularity, making it easier to manage and extend your program.
+ ";
+
+
 }
