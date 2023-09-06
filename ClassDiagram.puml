@@ -7,6 +7,7 @@ class Program{
 class Book{
     + String Title
     + List<Chapter> Chapters
+    +List<ConsoleColor> colors
     --
     + Book(string title)
     + Book(string title, List<Chapter> chapters)
@@ -38,6 +39,11 @@ Class Page{
 class MyNotes <<static>>{
     + {static} string VariablesPageOne
     + {static} string VariablesPageTwo
+    + {static} string ClassPageOne
+    + {static} string ClassPageTwo
+    + {static} string InheritancePageOne
+    + {static} string InheritancePageTwo
+
 }
 
 Book "1" *-- "1..*" Chapter
