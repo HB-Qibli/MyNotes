@@ -26,21 +26,78 @@ An 'int' is a whole number, like 1, 2, 3, 4, 5, 6, 7, 8, 9, 0.
 A 'string' is a sequence of characters, like ""Hello World"", ""I am a string"", and ""C# is awesome"". 
 A 'float' is a decimal number, like 1.234, 5.678, and 9.101112. 
 A 'bool' is a true or false value, like true and false. ";
+        public static string ClassPageOne = @"...
+            Imagine a grand architectural design in the world of programming – behold the 'class.' 
+            Classes are blueprints, the masterminds behind creating objects. 
+            They are the foundation of object-oriented programming, combining data (attributes) and functionality (methods) into a cohesive unit. 
+            A class defines the structure and behavior an object will possess. 
+            Much like a cookie cutter shapes cookies, a class molds objects, giving them distinct characteristics and capabilities.
+            To create a class, use the 'class' keyword followed by a name, and within its curly braces, you define fields and methods.
+            Observe:
+            
+            public class Person
+            {
+                public string Name;
+                public int Age;
+                
+                public void SayHello()
+                {
+                    Console.WriteLine(""Hello, I am "" + Name);
+                }
+            }
+        ";
 
-public static string ClassPageOne =
-@"...
-n C#, classes are fundamental building blocks of object-oriented programming (OOP) and play a crucial role in organizing and structuring code. 
-Think of a class as a blueprint or template for creating objects, which are instances of that class. 
-If variables are like containers that hold data, classes are like the blueprints that define what those containers should look like and what they can do. ";
+        public static string ClassPageTwo = @"
+            ...
+            The world of programming is brimming with complex ideas, but 'classes' serve as the cornerstone of organization and structure. 
+            Just as an architect plans a building, a programmer crafts classes to model real-world entities or abstract concepts.
+            Inside a class, you can declare fields, which are like attributes that hold data, and methods, which define actions the object can perform.
+            For instance, a 'Person' class might have 'Name' and 'Age' fields and a 'SayHello' method to greet people.
+            Objects created from these classes inherit their attributes and methods.
+            Classes enable code reusability and encapsulation, fostering a modular and clean code design.
+            They form the basis for managing complexity and building scalable software systems.
+";
 
-public static string ClassPageTwo =
-@"...
-A class encapsulates both data (in the form of variables, also known as fields) and behavior (in the form of methods). 
-Variables inside a class are called fields, and they define the characteristics or attributes of an object. 
-Methods, on the other hand, represent the actions or operations that can be performed on the object. 
-By defining classes, you can create reusable and organized code. For instance, 
-if you're building a game, you could have a 'Player' class with fields like 'health' and 'score' and methods like 'attack' and 'move.' This helps maintain code clarity, reusability, and modularity, making it easier to manage and extend your program.
- ";
+ public static string InheritancePageOne = @"...
+            In the realm of object-oriented programming, there exists a powerful concept known as 'inheritance.' 
+            Imagine a family tree, where traits, characteristics, and abilities are passed down from generation to generation. 
+            In C#, inheritance allows one class to acquire the properties and behaviors of another class. 
+            The class that provides the features is called the 'base' or 'parent' class, while the one inheriting is the 'derived' or 'child' class. 
+            This allows you to create a new class based on an existing one, reusing and extending its functionality. 
+            Derived classes inherit fields, methods, and properties from their base classes, promoting code reuse and fostering a hierarchical structure.
+            To establish inheritance, use the ':' symbol followed by the base class name when defining a new class.
+            Observe:
+            
+            public class Animal
+            {
+                public string Name;
+                
+                public void Speak()
+                {
+                    Console.WriteLine(""Animal speaks."");
+                }
+            }
+            
+            public class Dog : Animal
+            {
+                public void Bark()
+                {
+                    Console.WriteLine(""Dog barks."");
+                }
+            }
+        ";
 
-
+        public static string InheritancePageTwo = @"
+            ...
+            Inheritance empowers you to model relationships between objects and build upon existing functionality. 
+            The 'Dog' class in the example inherits the 'Name' field and 'Speak' method from the 'Animal' class. 
+            It can also introduce its unique attributes and methods, like 'Bark.' 
+            Inheritance forms the basis for polymorphism and code organization. 
+            Derived classes can be used interchangeably with their base classes, promoting flexibility and extensibility. 
+            However, remember that C# supports single inheritance only, meaning a class can inherit from one base class. 
+            If you need to reuse functionality from multiple sources, consider interfaces, a concept similar to inheritance but with more flexibility.
+        ";
+/*
+all taken from chatgpt ofc
+*/
 }}

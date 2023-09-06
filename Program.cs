@@ -16,6 +16,11 @@ Book mybook = new Book("My Book", new List<Chapter>()
     {
         new Page(MyNotes.ClassPageOne),
         new Page(MyNotes.ClassPageTwo),
+    }),
+    new Chapter("Chapter 3", new List<Page>()
+    {
+        new Page(MyNotes.InheritancePageOne),
+        new Page(MyNotes.InheritancePageTwo),
     })
 });
 

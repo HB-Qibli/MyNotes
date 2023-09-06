@@ -7,6 +7,20 @@ public class Book
 {
     public string Title;
     public List<Chapter> Chapters;
+
+    List<ConsoleColor> colors = new List<ConsoleColor> //list of colours to go trough when wanting to print rainbow shit
+        {
+            ConsoleColor.Red,
+            ConsoleColor.Green,
+            ConsoleColor.Blue,
+            ConsoleColor.Yellow,
+            ConsoleColor.Magenta,
+            ConsoleColor.Cyan
+        };
+
+        int colorIdx = 0; //index of color list
+
+
     public Book(string title)
     {
         Console.BackgroundColor = ConsoleColor.Black;
@@ -25,10 +39,12 @@ public class Book
     {
         //Print chapter titles
         Console.WriteLine("\nChapter titles:");
-        Console.ForegroundColor = ConsoleColor.Yellow;
+        Console.ForegroundColor = ConsoleColor.White;
         foreach (Chapter chapter in Chapters)
         {
+            Console.ForegroundColor = colors[colorIdx]; //loop trough colours in list so each title has diff, unless is mare than 6.
             Console.WriteLine(chapter.Title);
+            colorIdx = (colorIdx + 1) % colors.Count; // if over last index, loop back to first
         }
         Console.ResetColor();
     }
